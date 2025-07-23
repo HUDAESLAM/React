@@ -7,7 +7,7 @@ export default function Navbar() {
     <>
       <nav className={`navbar navbar-expand-lg navbar-dark  fw-bold position-sticky ${style.bg}`}>
         <div className="container">
-          <Link className="navbar-brand fs-2 text-uppercase" to={"/React"}>
+          <Link className="navbar-brand fs-2 text-uppercase" to={"/React/"}>
             Start Framework
           </Link>
           <button
