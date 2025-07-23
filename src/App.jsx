@@ -1,10 +1,10 @@
 // import { useState } from 'react'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout/Layout";
-import  Home  from "./Home/Home";
-import  About  from "./About/About";
-import  Portfolio  from "./Portfolio/Portfolio";
-import  Contact  from "./Contact/Contact";
+import Home from "./Home/Home";
+import About from "./About/About";
+import Portfolio from "./Portfolio/Portfolio";
+import Contact from "./Contact/Contact";
 import ErrorPage from "./Error/ErrorPage";
 
 const routers = createBrowserRouter([
@@ -12,11 +12,11 @@ const routers = createBrowserRouter([
     path: "/",
     element: <Layout />,
     children: [
-      { index: true, element: <Home /> },
+      { index: true, path: "/React", element: <Home /> },
       { path: "/about", element: <About /> },
       { path: "/portfolio", element: <Portfolio /> },
       { path: "/contact", element: <Contact /> },
-      {path: "*", element: <ErrorPage /> } 
+      { path: "*", element: <ErrorPage /> },
     ],
   },
 ]);
