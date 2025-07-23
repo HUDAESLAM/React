@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import Home from "./Home/Home";
 import About from "./About/About";
@@ -7,7 +7,7 @@ import Portfolio from "./Portfolio/Portfolio";
 import Contact from "./Contact/Contact";
 import ErrorPage from "./Error/ErrorPage";
 
-const routers = createBrowserRouter([
+const routers = createHashRouter([
   {
     path: "/",
     element: <Layout />,
@@ -16,7 +16,7 @@ const routers = createBrowserRouter([
       { path: "/about", element: <About /> },
       { path: "/portfolio", element: <Portfolio /> },
       { path: "/contact", element: <Contact /> },
-      { path: "*", element: <ErrorPage /> },
+      { path: "/*", element: <ErrorPage /> },
     ],
   },
 ]);

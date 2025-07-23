@@ -34,7 +34,7 @@ export default function Navbar() {
                 </NavLink>
               </li>
               <li>
-                <NavLink className="nav-link px-4 " to={"/Contact"}>
+                <NavLink className="nav-link px-4 " to={"/contact"}>
                   Contact
                 </NavLink>
               </li>
