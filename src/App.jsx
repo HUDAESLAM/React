@@ -19,6 +19,10 @@ const routers = createHashRouter([
       { path: "/*", element: <ErrorPage /> },
     ],
   },
+  {
+    path: "/React",
+    element: <Navigate to="/" replace />,
+  },
 ]);
 
 function App() {

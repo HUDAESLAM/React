@@ -7,6 +7,8 @@ export default function Home() {
 
   useEffect(() => {
       document.title = "Home";
+        console.log("✅ Home component loaded");
+
     }, []);
 
   return (
