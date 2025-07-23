@@ -1,0 +1,51 @@
+.line{
+  width: 70px;
+  height: 2px;
+  background-color: #2C3E50;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1ABC9C; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.image-wrapper:hover .overlay {
+  opacity: 0.7;
+}
+
+.plusIcon {
+  color: white;
+  font-size: 7rem;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.modalImage{
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .modalImage {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+}

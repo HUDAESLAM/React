@@ -1,0 +1,10 @@
+.intro {
+  background-color: #1abc9c;
+  height: 80vh;
+}
+
+.line{
+  width: 70px;
+  height: 3px;
+  background-color: white;
+}

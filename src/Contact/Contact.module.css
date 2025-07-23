@@ -1,0 +1,31 @@
+.line {
+  width: 70px;
+  height: 2px;
+  background-color: #2C3E50;
+}
+
+:global(.form-control) {
+  border: none !important;
+  border-bottom: 2px solid #c5c5c5 !important;
+  border-radius: 5px !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+:global(.form-control:focus) {
+  outline: none !important;
+  border-bottom: 2px solid #c5c5c5 !important;
+  box-shadow: none !important;
+}
+
+:global(.form-floating > .form-control:focus ~ label),
+:global(.form-floating > .form-control:not(:placeholder-shown) ~ label) {
+  color: #23BFA0 !important;
+  /* font-size: 15px; */
+}
+
+:global(.btn){
+  background-color: #23BFA0 !important;
+  color: white !important;
+  
+}

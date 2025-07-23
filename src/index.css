@@ -1,0 +1,23 @@
+.nav-link.active {
+  background-color: #1ABC9C !important;
+  color:white !important;
+  border-radius: 30px; 
+  padding: 8px 16px; 
+
+}
+
+.nav-link:focus , .nav-link.active{
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  background-color:transparent;
+  /* color: #00cba9; */
+}
+
+
